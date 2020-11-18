@@ -2,6 +2,8 @@
 document.getElementById("text-area").addEventListener("focus", function(){
     this.style.border = '1px solid gray';
     this.style.overflow = 'auto';
+    
+    document.getElementsByClassName("buttons")[0].innerHTML = "<i class='fa fa-save' style='font-family:'arial''> Save </i>";
 });
 
 // Lost focus on text area
