@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- This is for Home page -->
+    <header>
+        <div id="icon">
+            <h1 style="color: rgb(0, 174, 255);">ScriBBler</h1>
+            <p>Exmpore, Imagize, Create</p>
+        </div>
+        <div id="buttons">
+            <button id="signIn">Sign In</button>
+            <button id="signUp">Sign Up</button>
+        </div>
+        <div id="post-button">
+            <button>All Post</button>
+            <button>Create New Post</button>
+        </div>
+    </header>
+
+    <!-- This is create post area -->
+    <div class="boxes">
+        <div class="create-post">
+            <h2 align="center">Pen Your Post <span onclick="document.getElementsByClassName('boxes')[0].style.visibility = 'hidden'">X</span></h2>
+            <br>
+            <aside>Title</aside>
+            <input type="text"><br>
+            <aside>Content</aside>
+            <textarea cols="72" rows="22" ></textarea><br>
+            <input type="submit" value=" Create">
+        </div>
+    </div>
+
+    <!-- This is for Sign IN Box -->
+    <div class="boxes">
+        <div class="box">
+            <form action="">
+                <h2 align="center">Welcome Back! <span onclick="document.getElementsByClassName('boxes')[0].style.visibility = 'hidden'">X</span></h2>
+                <hr size="2">
+                <label for="user">Username</label><br>
+                <input type="text" placeholder="User name"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" placeholder="Enter your password"><br>
+                <input type="submit" value=" Login ">
+                <p align="center">Not a member? <a href=""> Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is for Sign Up Button -->
+    <div class="boxes">
+        <div class="box">
+            <form action="">
+                <h2 align="center">Get Started! <span onclick="document.getElementsByClassName('boxes')[1].style.visibility = 'hidden'">X</span></h2>
+                <hr size="2">
+                <label for="user">Full Name</label><br>
+                <input type="text" placeholder="Enter your full name"><br>
+                <label for="user">Username</label><br>
+                <input type="text" placeholder="User name"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" placeholder="Password"><br>
+                <label for="pass">Confirm Password</label><br>
+                <input type="password" placeholder="Confirm Password"><br>
+                <input type="submit" value=" Sign Up ">
+            </form>
+        </div>
+    </div>
+
+    <script src="header.js"></script>    
+</body>
+</html>

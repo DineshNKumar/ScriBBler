@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body {
+    background-color: rgb(255, 165, 0);
+    font-family: "arial";
+    padding: 0;
+    margin: 0;
+}
+.container{
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    font-size: 14px;
+}
+.container .box{
+    display: flex;
+    padding: 0px;
+
+    background-color: lightgray;
+
+    box-shadow: 0 5px 10px 0 rgba(15, 14, 14, 0.705);
+    border-radius: 20px;
+
+    margin: 20px 50px;
+}
+.box .center{
+    padding: 10px;
+}
+.box .left{
+    display: flex;
+    background-color: white;
+
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+}
+.box .right {
+    display: flex;
+
+    flex-direction: column;
+    margin: 10px;
+}
+.box .right #delete{
+    align-self: flex-start;
+    flex-grow: 2;
+    font-size: 20px;
+}
+.box .right #three-dottes{
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+header{
+    height: 20%;
+    padding: 10px;
+}
+header #icon{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1px;
+    float: left;
+    text-shadow: 0px 0px 5px rgb(146, 139, 139);
+}
+header #buttons button{
+    float: right;
+    background-color: rgba(5, 58, 173, 0.767);
+    color: white;
+    font-family: "arial";
+    font-size: 15px;
+    padding: 10px 15px;
+    border: none;
+    margin: 2px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+#delete:hover{
+    cursor: pointer;
+}
+.alert-box{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.87);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+
+    visibility: hidden;
+}
+.alert-box div{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    padding: 10px 20px;
+}
+.alert-box div p button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border:none;
+}
+.alert-box div p button[name="one"]{
+    background-color: rgba(190, 12, 12, 0.822);
+}
+.alert-box div p button[name="two"]{
+    background-color: rgba(12, 131, 12, 0.822);
+}
