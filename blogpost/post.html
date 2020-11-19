@@ -6,6 +6,7 @@
     <title>Blog Post</title>
 
     <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="../first_page/index.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"> 
@@ -50,6 +51,41 @@
                 
            </div>
        </div>
+    </div>
+
+       <!-- This is for Sign IN Box -->
+       <div class="boxes">
+        <div class="box">
+            <form action="">
+                <h2 align="center">Welcome Back! <span onclick="document.getElementsByClassName('boxes')[0].style.visibility = 'hidden'">X</span></h2>
+                <hr size="2">
+                <label for="user">Username</label><br>
+                <input type="text" placeholder="User name"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" placeholder="Enter your password"><br>
+                <input type="submit" value=" Login ">
+                <p align="center">Not a member? <a href=""> Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is for Sign Up Button -->
+    <div class="boxes">
+        <div class="box">
+            <form action="">
+                <h2 align="center">Get Started! <span onclick="document.getElementsByClassName('boxes')[1].style.visibility = 'hidden'">X</span></h2>
+                <hr size="2">
+                <label for="user">Full Name</label><br>
+                <input type="text" placeholder="Enter your full name" required><br>
+                <label for="user">Username</label><br>
+                <input type="text" placeholder="User name" required><br>
+                <label for="pass">Password</label><br>
+                <input type="password" placeholder="Password"><br>
+                <label for="pass">Confirm Password</label><br>
+                <input type="password" placeholder="Confirm Password"><br>
+                <input type="submit" value=" Sign Up ">
+            </form>
+        </div>
     </div>
 
     <script src="post.js"></script>
