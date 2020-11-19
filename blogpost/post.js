@@ -1,22 +1,25 @@
 // Focus on text area
-document.getElementById("text-area").addEventListener("focus", function(){
-    this.style.border = '1px solid gray';
-    this.style.overflow = 'auto';
-    
-    document.getElementsByClassName("buttons")[0].innerHTML = "<i class='fa fa-save' style='font-family:'arial''> Save </i>";
-});
+var line = 1;
+document.getElementById("like-btn").addEventListener("click", function(){
+    var c = document.getElementById("text-area");
 
-// Lost focus on text area
-document.getElementById("text-area").addEventListener("focusout", function(){
-    this.style.border = 'none';
-    this.style.overflow = 'hidden';
+    if(line % 2 == 0){
+        c.style.border = "none";
+        c.style.overflow = 'hidden';
+        c.style.height = (c.scrollHeight) + 'px';
+        this.innerHTML = "<i class='fa fa-pencil-square-o'> </i> Edit ";
+    }else{
+        c.style.border = '1px solid gray';
+        c.style.overflow = 'auto';
+        this.innerHTML = "<i class='fa fa-save'> </i> Save ";
+    }
+    line += 1;
 });
 
 document.getElementById("text-area").addEventListener("input", function(){
     this.style.height = 'auto';
     this.style.height = (this.scrollHeight) + 'px';
 });
-
 
 // Like button
 var count = 1;
